@@ -38,5 +38,5 @@ bool detecter_collision(int ennemis_x[], int ennemis_y[], int nb_ennemis, int x,
         }
         return false;
     }
-    throw ExceptionSizeTab();
+    throw ExceptionSizeTab();//abcd
 }
