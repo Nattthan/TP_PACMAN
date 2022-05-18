@@ -1,5 +1,4 @@
-QT       += core gui
-CONFIG += console
+QT       += core gui statemachine
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -11,10 +10,26 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
+    animatedwidget.cpp \
+    background.cpp \
+    drawable.cpp \
+    drawableelem.cpp \
+    interactive.cpp \
+    main.cpp \
+    movable.cpp \
+    regularmove.cpp \
     mainwindow.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    animatedwidget.h \
+    background.h \
+    consts.h \
+    drawable.h \
+    drawableelem.h \
+    interactive.h \
+    movable.h \
+    regularmove.h
 
 FORMS += \
     mainwindow.ui
