@@ -9,7 +9,7 @@ bool detecter_collision(int ennemis_x[], int ennemis_y[], int nb_ennemis,
 bool deplacer_personnage(int x, int y, std::string cmd);
 void ExceptionBounds();
 void ExceptionCommand();
-class ExceptionSizeTab {
+class ExceptionSizeTab() {
 
 };
 
