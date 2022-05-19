@@ -2,9 +2,8 @@
 #include <iostream>
 #include "Personnage.h"
 
-class NotifierCollision {
-private:
-
+class NotifierCollision : public ObserverCollision
+{
 public:
 	void addObserver(ObserverCollision obs);
 	void removeObserver(ObserverCollision obs);
