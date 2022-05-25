@@ -2,6 +2,9 @@
 
 void Clyde::new_pos()
 {
-	pos_x = val;
-	pos_y = val;
+    srand(time(NULL));
+    int val1 = rand() % 10; //0 à 9 (max + 1)
+    int val = rand() % 10; //0 à 9 (max + 1)
+    int pos_x = val1;
+    int pos_y = val;
 }

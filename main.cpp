@@ -3,6 +3,7 @@
 #include <string>
 using namespace std;
 #include <QApplication>
+#include "Personnage.h"
 
 bool detecter_collision(int ennemis_x[], int ennemis_y[], int nb_ennemis,
     int x, int y);
@@ -13,11 +14,11 @@ class ExceptionSizeTab {
 
 };
 
-
-
 int main(int argc, char** argv)
 {
     int x = 5, y = 4;
+    Personnage perso();
+
     int enn_x[4] = { 1, 2, 3, 4 }, enn_y[4] = { 1, 2, 3, 4 };
     try {
         if (detecter_collision(enn_x, enn_y, 4, x, y))

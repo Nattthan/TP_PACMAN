@@ -1,6 +1,6 @@
 #include "Ennemi.h"
 
-Ennemi::new_pos()
+void Ennemi::new_pos()
 {
 }
 

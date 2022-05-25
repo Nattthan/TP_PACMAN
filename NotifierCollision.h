@@ -1,11 +1,14 @@
 #include <string>
 #include <iostream>
-#include "Personnage.h"
+#include <vector>
 
-class NotifierCollision : public ObserverCollision
+class ObserverCollision;
+class NotifierCollision
 {
+private :
+    std::vector <ObserverCollision*> observers;
 public:
-	void addObserver(ObserverCollision obs);
-	void removeObserver(ObserverCollision obs);
+    void addObserver(ObserverCollision* obs);
+    void removeObserver(ObserverCollision* obs);
 	void notify(int x, int y);
 };

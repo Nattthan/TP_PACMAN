@@ -20,13 +20,13 @@ void Personnage::new_pos()
         pos_x += 1;
     }
     else if (cur_dep == "IDLE") {}
-    notify();
+    notify(pos_x, pos_y);
 }
 
 bool Personnage::test_collision(int x, int y)
 {
     if (x == pos_x && y == pos_y) {
-        return true
+        return true;
     }
     else {
         return false;

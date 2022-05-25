@@ -1,8 +1,9 @@
 #include <string>
 
+class NotifierCollision;
 class ObserverCollision
 {
 public:
-	void collision(NotifierCollision notifieur);
-	bool test_collision(int x, int y);
+    virtual void collision(NotifierCollision* notifieur)=0;
+    virtual bool test_collision(int x, int y)=0;
 };
